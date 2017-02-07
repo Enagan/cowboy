@@ -770,5 +770,5 @@ payload_length_to_binary(N) ->
 		N when N =< 16#7fffffffffffffff -> << 127:7, N:64 >>
 	end.
 
-get_real_socket({proxy_socket, _, Socket, _, _, _, _, _, _}) -> Socket;
+get_real_socket({proxy_socket, _, Socket, _, _, _, _, _, _, _}) -> Socket;
 get_real_socket(Socket) -> Socket.
